@@ -21,6 +21,8 @@
 //
 //=====================================================================
 
+#ifndef __APPLE__
+
 #include <xmmintrin.h>
 #include <smmintrin.h>
 
@@ -195,3 +197,5 @@ CGU_FLOAT sse_bc1ComputeBestEndpoints(CGU_FLOAT endpointsOut[2],
 
     return minError;
 }
+
+#endif

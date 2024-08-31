@@ -21,6 +21,8 @@
 //
 //=====================================================================
 
+#ifndef __APPLE__
+
 #include <immintrin.h>
 
 #include "core_simd.h"
@@ -136,3 +138,5 @@ CGU_FLOAT avx512_bc1ComputeBestEndpoints(CGU_FLOAT endpointsOut[2],
 
     return minError;
 }
+
+#endif
